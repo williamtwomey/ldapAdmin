@@ -4,7 +4,7 @@ define('LDAP_SERVER', 'example.com');
 define('LDAP_PORT', 389);
 
 // dn: <key>=username
-// Some servers come 'cn'
+// Some servers use 'cn'
 define('LDAP_KEY', 'uid');
 
 define('LDAP_SEARCH', 'ou=People,dc=example,dc=com');
