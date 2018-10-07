@@ -84,7 +84,7 @@ function ldap_auth( $username ) {
 
 
         $bind_user = LDAP_KEY . "=" . $username . "," . LDAP_SEARCH;
-        $bind_pass = $_POST["pwd"];
+        $bind_pass = filter_var($_POST["pwd"], FILTER_SANITIZE_STRING);
 
 	$log = "Attempting login\n User: ";
 	$log .= $bind_user;
