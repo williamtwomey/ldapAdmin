@@ -1,6 +1,6 @@
 ### ldapAdmin Wordpress Plugin ###
 
-Unlike other LDAP plugins, which re-create LDAP users in the local DB, this plugin allows you to impersonate a local user (admin). 
+Unlike other LDAP plugins that re-create LDAP users in the local DB, this plugin allows you to impersonate a local user (admin). 
 
 Edit config.php to configure LDAP settings
 
