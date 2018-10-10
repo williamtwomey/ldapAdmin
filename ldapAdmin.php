@@ -145,10 +145,12 @@ function ldap_auth( $username ) {
 			$user = get_user_by( 'id', $user_id );
 
 			if( $user ) {
-			    $curr_user = new WP_User( $user_id , $user->user_login ); 
-			    wp_set_auth_cookie( $user_id );
-			    do_action( 'wp_login', $user->user_login );
-			    wp_redirect(home_url($_POST['current_page']));
+	                            wp_set_current_user($user_id, $user->user_login);
+	                            wp_set_auth_cookie( $user_id );
+				    do_action( 'wp_login', $user->user_login );
+
+				    wp_redirect(home_url($_POST['current_page']));
+
 			}
 
 		}
