@@ -164,7 +164,7 @@ function ldap_auth( $username ) {
 
 	ldap_close($ds);
 
-	ldap_log($log);
+	//ldap_log($log);
 }
 
 add_action( 'wp_authenticate', 'ldap_auth' );
